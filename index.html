@@ -66,7 +66,29 @@
 			left: 100px;
 			top: 0px;
 		}
-
+		.d{
+			width:120px;
+			position: relative;
+			left: 150px;
+			top: 0px;
+		}
+		.mask {
+		     position: absolute;
+		    top: -500px;
+		    left: 8px;
+		    width: 125px;
+		    height: 153px;
+		    background: rgba(101, 101, 101, 0.6);
+		    color: #ffffff;
+		    opacity: 0;
+		}
+		.mask h2 {
+			padding-top:50px; 
+		    text-align: center;
+		    font-size: 20px;
+		    font-family:"FangSong", serif;
+		}
+		
 		</style>
 	</head>
 	<body class="bg-color">
@@ -87,9 +109,56 @@
 			
 			
 			<div class="c">
-				<a href="finded.html"><img src="img/inde2.jpg" class=" img-fluid" alt="..."></a>
+				<a href="finded.html"><img src="img/inde2.jpg" class=" img-fluid" alt="..."></a>\
+				<div class="d">
+				<button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  				<img src="img/know.jpg" class=" img-fluid" alt="..." width=150px height=100px; left=100px;>
+				</button>&emsp;&emsp;
+					
+				  </div>
+				
 			</div>
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">領養注意事項:</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        1.第一個禮拜:在籠子內習慣環境，前兩天可能不吃不喝，晚上也會因不安而叫，都是正常的現象。<br>
+					2.第二個禮拜:可能會除了吃東西和玩耍都在籠子內，可以用肉泥互動。<br>
+					3.前3個月為適應期，若評估不合店家有權收回貓咪<br>
+					4.我們會依據貓咪的狀況，與領養者追蹤約半年到一年，領養者需要配合店家進行。<br>
+					5.建議每個月存5000元當貓咪緊急醫療費。<br>
 
+					食:
+					禁止大賣場和彩色顏料
+					水跟飼料距離一公尺<br>
+					食物離便盆最遠距離<br>罐頭加水食用建議飼料為任食制<br>
+					衛:
+					定期驅蟲
+					夏天兩個月洗一次
+					冬天四個月洗一次
+					住:
+					門窗防護
+					危險藥品物品請妥善收納<br>
+					樂:
+					玩具
+					紙箱
+					逗貓棒
+
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			        
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			
+
+			
 
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
